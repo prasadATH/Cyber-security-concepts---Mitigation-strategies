@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+    <title>Vulnerable-Blog</title>
+  </head>
+  <body>
+    <div id="user-info" style="color:#FFFFFF;text-align:right;float:right; height:50px;width:100%;background-color:#000;font-size:25px;">
+        
+    </div>
+    <div id="main_container" style="background-color:#000">
+
+   
+        <div id="blog_container">
+            <img src="/BBCLogo.png" alt="Logo" style="border-radius: 50%; width:5%">
+            <h1 style="color:#fff; display:inline">Terrified, excited or just bewildered by artificial intelligence? Here’s what you should known<br><br></h1>
+            
+    <img src="/ai_img.png" alt="image" />
+    <p><span id=blog-author><br>BBC News</span> | 04 September 2023<br></p>
+    <hr>
+    <h1 style="color:#ff8c00">Five things you really need to know about AI</h1>
+    <p>Academic consultant for The Open University: Mike Richards, Senior Lecturer in Computing & Communication Every day, it seems, 
+        there’s a new, bewildering or frightening story about AI in the news - how it’s going to steal our jobs, spread internet fakery 
+        on a colossal scale and generally take over the world. But what exactly is AI – artificial intelligence - and are the scare stories
+         even true? Title card: Five things you really need to know about AI Made in partnership with The Open University #1 AI IS AS OLD AS 
+         YOUR GRANDPARENTS So, the first thing to know is that AI has been around a lot longer than you might think. Its roots lie in an 
+         idea known as an ‘artificial neural network’ from the 1940’s .</p><br>
+
+         <p>A neural network is a bit like a team of interconnected workers that learn to solve problems. Each time they come up with a possible 
+            solution, it is marked. If there is room for improvement, they adjust and change their connections. Over time the network becomes
+             more efficient. And technology powered by neural networks is all around us right now. It suggests movies and music we might like. 
+            It recognises faces and objects when taking photos on smartphones, enabling features like facial recognition. It’s heavily used by
+            social media platforms to personalise our feeds. More recently, a form of AI known as ‘generative AI’ is powering applications that
+            can seemingly create new data, such as these pictures created by Midjourney. It can also power chatbots like Open AI’s ChatGPT and
+            Google’s Bard, which give humanlike responses to questions. These are getting better at interacting with us, and seemingly more humanlike.
+            This can seem scary, but it’s worth knowing point 2: #2 AI CAN’T FEEL OR THINK If you ask Chat GPT a question like this one: Why should
+            we be concerned about AI? It does a pretty good job of providing a response that appears logical. And with that convincing humanlike
+            response it’s easy for us to believe it understands what it’s saying, that it has feelings and motivations. It’s understandable that
+            we do this but it’s worth remembering, right now AI can’t think or feel, can’t love, or hate. ChatGPT and its counterparts are sophisticated
+            sentence completion apps, that analyse our patterns of communication and provide responses similar to the way humans would typically reply.
+            A bit like a “talking” parrot. Which leads us on to point number 3. #3 AI MAKES STUFF UP Chatbots can have an awkward relationship with
+            the truth. Technically known as "AI hallucinations", you could also describe it as "making stuff up”. The core of the technology
+            is a model that uses probability to predict the next word, sentence, or paragraph. It can generate seemingly plausible replies
+            but lacks the ability to assess truthfulness or the accuracy of its responses. 
+        </p><br>
+        
+        <p>So anyone thinking of using Chatbots to write 
+            content needs to be careful they’re not incorporating credible- sounding BS that can be easily spotted by someone who has
+            actually done the research. #4 AI CAN SOUND RACIST AND SEXIST The idea of a racist machine might seem far-fetched. But if AI
+             is trained on data that’s racist, biased or hateful, then its output will be too. As we all know, racism, bias and hateful 
+             content can be found in abundance online. In 2016, Microsoft launched an experimental Chatbot named Tay, but quickly pulled the 
+             plug after it made racist and offensive remarks. It learnt to do this from interacting with users on social media. Microsoft 
+             apologised and promised to implement improved safety features in future. This is why the ethical framework that governs any AI
+              application is incredibly important, and why many are calling for safeguards to prevent bias and hate speech to be built into 
+              AI systems. AI HAS INCREDIBLE POTENTIAL For all the notes of caution, it can be easy to forget there’s many potential benefits
+               to AI. It’s set to truly revolutionise healthcare. AI has already discovered new drugs and is being used to identify cancer cells
+                much more reliably than humans. And AI chatbots can behave like patient teachers when we struggle to understand a complex topic,
+                 summarising huge volumes of information for us. The AI revolution has the potential to enhance and speed up work in many fields,
+                  from software programming, to animation, to law enforcement and journalism. This has pluses and minuses of course, but could this
+                   extra capacity free us up to do other things? Like tackling climate change or looking after ourselves and each other better? As
+                    AI advances, governments and regulators will of course need to make sure it is being used ethically and legally – no easy feat.
+                     But will AI take over the world? Don’t forget AI is a tool, and even a powerful tool can't take over the world on its own. 
+                     It's up to us to decide how we use it - or even if we should use it at all.  </p><br>
+
+    <h1 style="color:#ff8c00">Add Comment</h1>
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1 style="color:#ff8c00">Comments</h1>
+    
+    <span id="user-comments"></span>
+
+
+</div>
+
+</div>
+<script>
+  // Function to get the value of a cookie by name
+  function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  // Check if the 'user' cookie exists
+    const cookieData = document.cookie;
+
+  // Check if the "user" cookie exists
+  if (cookieData.indexOf('user=') !== -1) {
+    // Extract and decode the JSON data from the cookie
+    const encodedUserData = cookieData.split('user=')[1];
+    const userData = JSON.parse(decodeURIComponent(encodedUserData));
+    
+    const userInfo = document.getElementById('user-info');
+    userInfo.innerHTML = `<p>++Welcome  ${userData.username}! ++</p>`;
+    // Now you can access the user data as an object
+    console.log(userData);
+  }
+</script>
+  <script>
+
+ 
+
+
+    function displayComments(comments) {
+        let userComments = document.getElementById("user-comments");
+        userComments.style.backgroundColor = "#fff";
+
+        
+    
+    
+        for (let i = 0; i < comments.length; ++i) {
+            let comment = comments[i];
+            let commentSection = document.createElement("section");
+            commentSection.setAttribute("class", "comment");
+            commentSection.style.backgroundColor = "#DADDE1";
+            commentSection.style.marginBottom ="20px";
+            commentSection.style.borderRadius="20px";
+            commentSection.style.padding = "5px";
+            
+   
+    
+            if (comment.name) {
+                let nameElement = document.createElement("span");
+                nameElement.setAttribute("id", "author");
+                nameElement.innerHTML = "<br>"+comment.name;
+               // firstPElement.appendChild(nameElement);
+                commentSection.append(nameElement);
+                
+                
+            }
+    
+            if (comment.email) {
+                let emailElement = document.createElement("span");
+                emailElement.innerHTML = ` | ${comment.email}`;
+                commentSection.append(emailElement);
+            }
+    
+          
+    
+            if (comment.message) {
+                let messagePElement = document.createElement("p");
+                messagePElement.innerHTML = "<br>"+comment.message+"<br>";
+
+        
+                messagePElement.style.color = "#000";
+                commentSection.append(messagePElement);
+              
+            }
+    
+    
+            userComments.appendChild(commentSection);
+           
+        }
+    }
+    
+
+    // Fetch JSON data from the server
+    fetch('/data')
+        .then(response => response.json())
+        .then(data => {
+            // Call the displayJSONData function with the fetched data
+            displayComments(data);
+        });
+</script>
+  </body>
+
+</html>

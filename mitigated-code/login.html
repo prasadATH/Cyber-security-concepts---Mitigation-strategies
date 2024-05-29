@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+
+
+<!DOCTYPE html>
+<html lang="en" id="contentFrame" >
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Welcome to blog!</title>
+
+
+
+<style type="text/css">
+
+	#contentFrame{
+		height: 100%;
+		width: 100%;
+	}
+
+	body {
+		margin: 0;
+		height: 100%;
+	}
+	
+	input{
+		display: block;
+		font-family: Poppins, sans-serif;
+		background-color:aliceblue;
+		border-color: #0081cd;
+		padding: 5%;
+		border-radius: 5px;
+
+	}
+.gradient_background {
+    background: linear-gradient(179.82deg, #c2e7ff 0.15%, #fff0f9 100.96%);
+}
+
+.main_container{
+	width: 100%;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+            justify-content: center;
+			background-image: "bg_main.png";
+	
+}
+
+.inner_container{
+	width: 30%;
+	height:80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+            justify-content: center;
+
+	background-color: #FFFFFF;
+}
+
+.heading_font_properties{
+text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
+
+}
+.normal_text{
+	font-family: Poppins, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10%;
+}
+
+
+.login_But_div{
+	width: 100%;
+margin: auto;
+text-align: center;
+	cursor: pointer;
+	overflow: visible;
+	color: #FFFFFF;
+	background-color: #0081cd;
+	border-radius: 10px;
+	    padding: 18px;
+	    font-size: 12px;
+	    font-weight: 500;
+	
+
+
+
+}
+.logo{
+	margin: auto;
+	width : 100px ;
+	height:100px;
+	display: flex;
+	align-self: center;
+
+}
+
+.login_details_div{
+width:fit-content;
+	height: fit-content;
+	margin: auto;
+	padding:5%;
+	
+}
+.login_but_wrapper{
+	width: 30%;
+	height: fit-content;
+	margin: auto;
+}
+
+.footer_div{
+	    font-family: Poppins,sans-serif;
+	        color: #3d4957;
+    font-size: 12px;
+    text-align: center;
+	bottom: 0;
+}
+
+.but_trans:hover{background-color: #17a2b8;cursor: pointer;}
+
+
+</style>
+</head>
+<body>
+<div class="gradient_background  main_container">
+
+<div class="inner_container">
+
+<div class="heading_font_properties">
+Welcome to
+</br>
+Blog!
+</div>
+<div class="normal_text">
+ </br>
+Enter your credentials to login
+</div>
+<div class ="login_details_div" >
+
+    <form action="/set-cookie" method="post">
+<input id="username" type="username" name="username" placeholder="UserName" />
+<br>
+<input id="password" type="password" name="password" placeholder="Password" />
+</div>
+
+<div id="invalidPass" class="error-message" style="display: none;">
+Incorrect password, Please try again.
+</div>
+<div id="success" class="success-message" style="display: none;">Success! 
+</div>
+<div class="login_but_wrapper">
+<button id="submitPass" class="login_But_div but_trans" type="submit">
+	Login
+
+</button>
+
+</form>
+</div>
+
+
+
+
+<div class="footer_div">
+© 2023 <a href="https://www.CapitalCityBank.com/" target="_blank">Liberty Capital Bank.</a> All Rights Reserved
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>

